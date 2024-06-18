@@ -1,8 +1,9 @@
 {
-    "identifier": "org.TokyoNight",
+    "identifier": "22slides.tokyonight",
     "name": "Tokyo Night",
     "organization": "22Slides",
-    "description": "Lorem ipsum, dolor sit amet.",
+    "description": "Tokyo Night Nova theme",
     "version": "1.0",
     "categories": ["themes"]
 }
+

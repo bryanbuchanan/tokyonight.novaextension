@@ -299,12 +299,13 @@ cdata {
 /* Markup */
 markup.heading {
 	color: $orange;
+	font-weight: bold;
 }
 markup.line {
 	color: $yellow;
 }
 markup.bold {
-	color: $lightblue;
+	color: $lime;
 	font-weight: bold;
 }
 markup.italic {
@@ -375,46 +376,30 @@ tag.attribute.value.link {
 }
 
 /* Styles */
-style.at {
-	color: hsl(32, 90%, 70%);
-	font-weight: bold;
-}
-style.selector.element {
-	font-weight: bold;
-}
-style.selector.identifier.id {
-	color: hsl(32, 90%, 70%);
-}
-style.selector.identifier.class {
-	color: hsl(100, 60%, 70%);
-}
-style.selector.pseudoclass {
-	color: hsl(270, 80%, 80%);
-}
-style.selector.pseudoelement {
-	color: hsl(32, 90%, 70%);
-}
-style.attribute.name {
-	color: hsl(190, 85%, 65%);
-}
-style.value.number {
-	color: hsl(45, 50%, 80%);
-}
-style.value.color.hex {
-	color: hsl(45, 50%, 80%);
-}
-style.value.keyword {
-	color: hsl(210, 100%, 70%);
-}
-style.value.color.named {
-	color: hsl(210, 100%, 70%);
-}
-style.value.identifier.function {
-	color: hsl(160, 80%, 55%);
-}
+style {
+	
+	&.at {
+		color: $orange;
+		font-weight: bold;
+	}
+	
+	&.selector {
+		&.element { font-weight: bold; }
+		&.identifier.id { color: $orange; }
+		&.identifier.class { color: $green; }
+		&.pseudoclass { color: $purple; }
+		&.pseudoelement { color: $yellow; }
+	}
+	&.attribute.name { color: $green; }
+	&.value {
+		.number { color: $orange; }
+		&.color.hex { color: $yellow; }
+		&.keyword { color: $lightblue; }
+		&.color.named { color: $lightblue; }
+		&.identifier.function { color: $green; }
+	}
 
-
-
+}
 
 /**
  * Terminal

@@ -238,6 +238,7 @@ cdata {
 /* Markup */
 markup.heading {
   color: #f19b74;
+  font-weight: bold;
 }
 
 markup.line {
@@ -245,7 +246,7 @@ markup.line {
 }
 
 markup.bold {
-  color: #8aa9f9;
+  color: #cae797;
   font-weight: bold;
 }
 
@@ -315,52 +316,41 @@ tag.attribute.value.link {
 
 /* Styles */
 style.at {
-  color: hsl(32, 90%, 70%);
+  color: #f19b74;
   font-weight: bold;
 }
-
 style.selector.element {
   font-weight: bold;
 }
-
 style.selector.identifier.id {
-  color: hsl(32, 90%, 70%);
+  color: #f19b74;
 }
-
 style.selector.identifier.class {
-  color: hsl(100, 60%, 70%);
+  color: #77d3bf;
 }
-
 style.selector.pseudoclass {
-  color: hsl(270, 80%, 80%);
+  color: #ba9bf8;
 }
-
 style.selector.pseudoelement {
-  color: hsl(32, 90%, 70%);
+  color: #f6c983;
 }
-
 style.attribute.name {
-  color: hsl(190, 85%, 65%);
+  color: #77d3bf;
 }
-
-style.value.number {
-  color: hsl(45, 50%, 80%);
+style.value .number {
+  color: #f19b74;
 }
-
 style.value.color.hex {
-  color: hsl(45, 50%, 80%);
+  color: #f6c983;
 }
-
 style.value.keyword {
-  color: hsl(210, 100%, 70%);
+  color: #8aa9f9;
 }
-
 style.value.color.named {
-  color: hsl(210, 100%, 70%);
+  color: #8aa9f9;
 }
-
 style.value.identifier.function {
-  color: hsl(160, 80%, 55%);
+  color: #77d3bf;
 }
 
 /**
