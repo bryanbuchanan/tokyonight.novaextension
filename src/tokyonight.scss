@@ -142,9 +142,8 @@ meta.indentguide {
 meta.gutter {
 	color: $darkgrey;
 	&.selected {
-		// background-color: hsl(210, 5%, 10%);
-		// color: hsl(210, 17%, 76%);
 		color: $orange;
+		font-weight: bold;
 	}
 }
 

@@ -93,6 +93,7 @@ meta.gutter {
 }
 meta.gutter.selected {
   color: #f19b74;
+  font-weight: bold;
 }
 
 /*
