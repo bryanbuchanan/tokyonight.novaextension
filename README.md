@@ -1,4 +1,4 @@
-<img src="extension.png" width="64px" height="64px">
+<img src="extension.png" width="64" height="64">
 
 # Tokyo Night Nova Theme
 
