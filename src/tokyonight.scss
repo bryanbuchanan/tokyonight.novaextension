@@ -1,0 +1,430 @@
+$background: #222436;
+$background2: #1E2030;
+
+$red: 		#ee7d82;
+$pink: 		#f0abe6;
+$purple: 	#ba9bf8;
+$blue: 		#3d59a1;
+$lightblue: #8aa9f9;
+$aqua: 		#9cdbfb;
+$green: 	#77d3bf;
+$lime: 		#cae797;
+$yellow: 	#f6c983;
+$orange: 	#f19b74;
+$grey: 		#848bb4;
+$white: 	#cad3f2;
+$darkgrey: 	#3c425f; // line numbers
+
+$highlight: #30334b;
+$comment: 	#656da2;
+
+meta {
+	-theme-interface-style: dark;
+	-theme-vibrancy: none;
+	-theme-accent-color: auto;
+}
+
+
+/*
+ * Window styles
+ */
+
+meta {
+	
+	&.window {
+		border-color: transparent;
+		background-color: $background2;
+	}
+	
+	&.titlebar {
+		color: $white;
+		border-color: hsla(0, 0%, 0%, 0.5);
+		
+		&.inactive {}
+		
+	}
+	
+	&.button {
+		color: $white;
+		background: $darkgrey;
+		
+		&.highlighted {
+			background: linear-gradient(hsl(210, 5%, 42%), hsl(210, 5%, 34%));
+			color: white;
+		}
+		&.selected {
+			color: white;
+		}
+		&.highlighted.selected {
+			color: white;
+		}
+		&.disabled {
+			
+		}
+	}
+
+	&.textfield {
+		background-color: transparent;
+		border-color: $darkgrey;
+		
+		&.highlighted {
+			border-color: $orange;
+		}
+		
+	}
+	
+}
+
+/*
+ * Document styles
+ */
+meta.document {
+	background-color: $background;
+	border-color: transparent;
+	
+	&.button {
+		background: $darkgrey;
+	
+		&.disabled {
+			background: linear-gradient(hsla(220, 5%, 25%, 0.3), hsla(220, 5%, 21%, 0.3));
+		}
+		
+		&.highlighted {
+			background: $comment;
+		}
+		
+		&.selected {
+			background-color: $orange;
+		}
+		
+	}
+	
+	&.textfield {
+		background-color: $background2;
+		border-color: $darkgrey;
+	
+		&.highlighted {
+			// background-color: hsl(210, 5%, 10%);
+			border-color: $orange;
+		}
+		
+	}
+
+}
+
+/* Text */
+meta.text {
+	color: $lightblue;
+	background-color: #fff;
+
+	&.invisible {
+		color: hsla(210, 100%, 90%, .1);
+	}
+	
+	&.selected {
+		color: #fff;
+		background-color: $darkgrey;
+	}
+	
+}
+
+/* Cursor */
+meta.cursor {
+	background-color: $highlight;
+}
+
+/* Indentation Guides */
+meta.indentguide {
+	border-color: hsla(220, 5%, 48%, 0.2);
+}
+
+/* Gutter */
+meta.gutter {
+	color: $darkgrey;
+	&.selected {
+		// background-color: hsl(210, 5%, 10%);
+		// color: hsl(210, 17%, 76%);
+		color: $orange;
+	}
+}
+
+/*
+ * Syntax styles
+ */
+comment {
+	color: $comment;
+	font-style: italic;
+}
+processing {
+	color: hsl(210, 20%, 50%);
+}
+declaration {
+	color: hsl(210, 20%, 50%);
+}
+bracket {
+	color: $grey;
+}
+operator {
+	color: hsl(210, 50%, 70%);
+}
+invalid {
+	background-color: hsl(0, 90%, 60%);
+	color: hsl(60, 33%, 96%);
+}
+link {
+	color: hsl(210, 100%, 70%);
+}
+
+/* Keywords */
+keyword {
+	color: $pink;
+	font-style: italic;
+	
+	&.modifier {
+		color: $aqua;
+		font-style: normal;
+	}
+	
+	&.condition { color: $aqua; }
+	&.construct { color: $aqua; }
+	&.statement { color: $aqua; }
+	&.self { color: $aqua; }
+	&.self.prefix { color: $aqua; }
+}
+
+/* Values */
+value {
+	
+	&.boolean {
+		color: $orange;
+	}
+	
+	value {
+		&.null { color: $orange; }
+		&.number { color: $orange; }
+		&.entity { color: hsl(210, 100%, 70%); }
+		&.symbol { color: hsl(210, 100%, 70%); }
+	}
+	
+}
+
+/* Identifiers */
+identifier {
+	
+	&.type {
+		color: hsl(32, 90%, 70%);
+	}
+	
+	&.constant,
+	&.global,
+	&.variable {
+		color: hsl(270, 80%, 80%);
+	}
+	
+	&.constant.prefix,
+	&.global.prefix,
+	&.variable.prefix {
+		color: hsl(240, 100%, 92%);
+	}
+	
+	&.property {
+		color: $green;
+	}
+	
+	&.property.prefix {
+		color: hsl(240, 100%, 92%);
+	}
+	
+	&.decorator,
+	&.function,
+	&.method {
+		color: $lightblue;
+	}
+	
+	&.key {
+		color: hsl(270, 80%, 80%);
+	}
+	
+	&.argument {
+		color: $yellow;
+	}
+	
+	&.argument.prefix {
+		color: hsl(240, 100%, 92%);
+	}
+	
+}
+
+punctuation {
+	&.delimiter {
+		color: $green;
+	}
+}
+
+/* Strings */
+string {
+	color: $lime;
+	
+	&.delimiter {
+		color: $green;
+	}
+	
+	&.escape {
+		color: hsl(5, 80%, 80%);
+	}
+	
+	&.key {
+		color: hsl(270, 80%, 80%);
+	}
+	
+	&-keyword {
+		color: hsl(30, 100%, 90%);
+	}
+	
+	&-template {
+		color: hsl(30, 100%, 70%);
+	}
+	
+}
+regex {
+	color: $orange;
+}
+regex.escape {
+	color: $yellow;
+}
+cdata {
+	color: $blue;
+}
+
+/* Markup */
+markup.heading {
+	color: $orange;
+}
+markup.line {
+	color: $yellow;
+}
+markup.bold {
+	color: $lightblue;
+	font-weight: bold;
+}
+markup.italic {
+	color: $green;
+	font-style: italic;
+}
+markup.strikethrough {
+	color: $red;
+}
+markup.list.item {
+	color: $yellow;
+}
+markup.code {
+	background-color: rgba(128, 128, 128, 0.2);
+}
+markup.link {
+	color: $aqua;
+}
+
+/* Types */
+definition.class.name,
+definition.type.name,
+definition.package.name,
+definition.enum.name,
+definition.union.name,
+definition.struct.name {
+	
+}
+
+/* Members */
+definition.property.name {
+}
+definition.function.name,
+definition.method.name {
+	
+}
+
+/* Tags */
+tag {
+	color: hsl(160, 30%, 40%);
+}
+tag.name {
+	color: hsl(160, 60%, 60%);
+}
+tag.framework {
+	color: hsl(280, 30%, 50%);
+}
+tag.framework.name {
+	color: hsl(280, 60%, 70%);
+}
+tag.attribute.name {
+	color: hsl(100, 60%, 70%);
+}
+tag.framework.attribute.name {
+	color: hsl(320, 60%, 70%);
+}
+tag.attribute.value {
+	color: hsl(5, 80%, 65%);
+}
+tag.attribute.value.delimiter {
+	color: hsl(0, 80%, 60%);
+}
+tag.attribute.operator {
+	color: hsl(210, 50%, 70%);
+}
+tag.attribute.value.link {
+	color: hsl(210, 100%, 70%);
+}
+
+/* Styles */
+style.at {
+	color: hsl(32, 90%, 70%);
+	font-weight: bold;
+}
+style.selector.element {
+	font-weight: bold;
+}
+style.selector.identifier.id {
+	color: hsl(32, 90%, 70%);
+}
+style.selector.identifier.class {
+	color: hsl(100, 60%, 70%);
+}
+style.selector.pseudoclass {
+	color: hsl(270, 80%, 80%);
+}
+style.selector.pseudoelement {
+	color: hsl(32, 90%, 70%);
+}
+style.attribute.name {
+	color: hsl(190, 85%, 65%);
+}
+style.value.number {
+	color: hsl(45, 50%, 80%);
+}
+style.value.color.hex {
+	color: hsl(45, 50%, 80%);
+}
+style.value.keyword {
+	color: hsl(210, 100%, 70%);
+}
+style.value.color.named {
+	color: hsl(210, 100%, 70%);
+}
+style.value.identifier.function {
+	color: hsl(160, 80%, 55%);
+}
+
+
+
+
+/**
+ * Terminal
+ */
+terminal {
+	&.red { color: $red; }
+	&.green { color: $green; }
+	&.yellow { color: $yellow; }
+	&.blue { color: $blue; }
+	&.magenta { color: $purple; }
+	&.cyan { color: $aqua; }
+	&.white { color: $white; }
+}
