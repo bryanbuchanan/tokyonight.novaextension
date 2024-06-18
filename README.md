@@ -2,7 +2,7 @@
 
 # Tokyo Night Nova Theme
 
-This is a loose port of the the original [Tokyo Night theme by enkia](https://github.com/enkia/tokyo-night-vscode-theme) and the [NeoVim "Moon" variant by Folke Lemaitre](https://github.com/folke/tokyonight.nvim).
+Inspired by NeoVim's [Tokyo Night Moon](https://github.com/folke/tokyonight.nvim) theme by Folke Lemaitre, and of course the original [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme) theme by enkia.
 
 ![Tokyo Night](./screenshot.png)
 
