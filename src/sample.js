@@ -27,8 +27,6 @@ export default async (req, res) => {
 
 const variable = "string"
 
-
-
 function init() {
 	let count = 25;
 	let name = 'main';
