@@ -13,7 +13,7 @@ $yellow: 	#f6c983;
 $orange: 	#f19b74;
 $grey: 		#848bb4;
 $white: 	#cad3f2;
-$darkgrey: 	#3c425f; // line numbers
+$darkgrey: 	#3c425f;
 
 $highlight: #30334b;
 $comment: 	#656da2;
@@ -21,7 +21,7 @@ $comment: 	#656da2;
 meta {
 	-theme-interface-style: dark;
 	-theme-vibrancy: none;
-	-theme-accent-color: auto;
+	-theme-accent-color: false;
 }
 
 
@@ -47,19 +47,22 @@ meta {
 	&.button {
 		color: $white;
 		background: $darkgrey;
-		
+		border: none;
+
 		&.highlighted {
-			background: linear-gradient(hsl(210, 5%, 42%), hsl(210, 5%, 34%));
 			color: white;
+			background: $blue;
 		}
 		&.selected {
 			color: white;
+			background: $orange;
+			border: transparent;
 		}
 		&.highlighted.selected {
-			color: white;
+			background: $yellow;
 		}
 		&.disabled {
-			
+			background: transparent;
 		}
 	}
 
@@ -73,6 +76,10 @@ meta {
 		
 	}
 	
+	&.accent {
+		color: $orange;
+	}
+	
 }
 
 /*
@@ -81,23 +88,6 @@ meta {
 meta.document {
 	background-color: $background;
 	border-color: transparent;
-	
-	&.button {
-		background: $darkgrey;
-	
-		&.disabled {
-			background: linear-gradient(hsla(220, 5%, 25%, 0.3), hsla(220, 5%, 21%, 0.3));
-		}
-		
-		&.highlighted {
-			background: $comment;
-		}
-		
-		&.selected {
-			background-color: $orange;
-		}
-		
-	}
 	
 	&.textfield {
 		background-color: $background2;
@@ -140,10 +130,12 @@ meta.indentguide {
 /* Gutter */
 meta.gutter {
 	color: $darkgrey;
+	
 	&.selected {
 		color: $orange;
 		font-weight: bold;
 	}
+	
 }
 
 /*

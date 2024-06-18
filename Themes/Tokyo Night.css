@@ -1,7 +1,7 @@
 meta {
   -theme-interface-style: dark;
   -theme-vibrancy: none;
-  -theme-accent-color: auto;
+  -theme-accent-color: false;
 }
 
 /*
@@ -18,16 +18,22 @@ meta.titlebar {
 meta.button {
   color: #cad3f2;
   background: #3c425f;
+  border: none;
 }
 meta.button.highlighted {
-  background: linear-gradient(hsl(210, 5%, 42%), hsl(210, 5%, 34%));
   color: white;
+  background: #3d59a1;
 }
 meta.button.selected {
   color: white;
+  background: #f19b74;
+  border: transparent;
 }
 meta.button.highlighted.selected {
-  color: white;
+  background: #f6c983;
+}
+meta.button.disabled {
+  background: transparent;
 }
 meta.textfield {
   background-color: transparent;
@@ -36,6 +42,9 @@ meta.textfield {
 meta.textfield.highlighted {
   border-color: #f19b74;
 }
+meta.accent {
+  color: #f19b74;
+}
 
 /*
  * Document styles
@@ -43,18 +52,6 @@ meta.textfield.highlighted {
 meta.document {
   background-color: #222436;
   border-color: transparent;
-}
-meta.document.button {
-  background: #3c425f;
-}
-meta.document.button.disabled {
-  background: linear-gradient(hsla(220, 5%, 25%, 0.3), hsla(220, 5%, 21%, 0.3));
-}
-meta.document.button.highlighted {
-  background: #656da2;
-}
-meta.document.button.selected {
-  background-color: #f19b74;
 }
 meta.document.textfield {
   background-color: #1E2030;
