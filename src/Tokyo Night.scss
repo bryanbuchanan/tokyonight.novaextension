@@ -24,7 +24,6 @@ meta {
 	-theme-accent-color: false;
 }
 
-
 /*
  * Window styles
  */
@@ -104,14 +103,14 @@ meta.document {
 
 /* Text */
 meta.text {
-	color: $lightblue;
+	color: $white;
 
 	&.invisible {
 		color: hsla(210, 100%, 90%, .1);
 	}
 	
 	&.selected {
-		color: #fff;
+		color: white;
 		background-color: $darkgrey;
 	}
 	
@@ -146,23 +145,23 @@ comment {
 	font-style: italic;
 }
 processing {
-	color: hsl(210, 20%, 50%);
+	color: $lightblue;
 }
 declaration {
-	color: hsl(210, 20%, 50%);
+	color: $lightblue;
 }
 bracket {
 	color: $grey;
 }
 operator {
-	color: hsl(210, 50%, 70%);
+	color: $lightblue;
 }
 invalid {
-	background-color: hsl(0, 90%, 60%);
-	color: hsl(60, 33%, 96%);
+	background-color: $red;
+	color: $white;
 }
 link {
-	color: hsl(210, 100%, 70%);
+	color: $orange;
 }
 
 /* Keywords */
@@ -191,8 +190,8 @@ value {
 	
 	&.null { color: $orange; }
 	&.number { color: $orange; }
-	&.entity { color: hsl(210, 100%, 70%); }
-	&.symbol { color: hsl(210, 100%, 70%); }
+	&.entity { color: $yellow; }
+	&.symbol { color: $yellow; }
 	
 }
 
@@ -200,19 +199,19 @@ value {
 identifier {
 	
 	&.type {
-		color: hsl(32, 90%, 70%);
+		color: $yellow;
 	}
 	
 	&.constant,
 	&.global,
 	&.variable {
-		color: hsl(270, 80%, 80%);
+		color: $pink;
 	}
 	
 	&.constant.prefix,
 	&.global.prefix,
 	&.variable.prefix {
-		color: hsl(240, 100%, 92%);
+		color: $white;
 	}
 	
 	&.property {
@@ -220,7 +219,7 @@ identifier {
 	}
 	
 	&.property.prefix {
-		color: hsl(240, 100%, 92%);
+		color: $pink;
 	}
 	
 	&.decorator,
@@ -230,7 +229,7 @@ identifier {
 	}
 	
 	&.key {
-		color: hsl(270, 80%, 80%);
+		color: $purple;
 	}
 	
 	&.argument {
@@ -238,7 +237,7 @@ identifier {
 	}
 	
 	&.argument.prefix {
-		color: hsl(240, 100%, 92%);
+		color: $aqua;
 	}
 	
 }
@@ -258,22 +257,23 @@ string {
 	}
 	
 	&.escape {
-		color: hsl(5, 80%, 80%);
+		color: $orange;
 	}
 	
 	&.key {
-		color: hsl(270, 80%, 80%);
+		color: $purple;
 	}
 	
 	&-keyword {
-		color: hsl(30, 100%, 90%);
+		color: $yellow;
 	}
 	
 	&-template {
-		color: hsl(30, 100%, 70%);
+		color: $orange;
 	}
 	
 }
+
 regex {
 	color: $orange;
 }
@@ -333,34 +333,29 @@ definition.method.name {
 
 /* Tags */
 tag {
-	color: hsl(160, 30%, 40%);
-}
-tag.name {
-	color: hsl(160, 60%, 60%);
-}
-tag.framework {
-	color: hsl(280, 30%, 50%);
-}
-tag.framework.name {
-	color: hsl(280, 60%, 70%);
-}
-tag.attribute.name {
-	color: hsl(100, 60%, 70%);
-}
-tag.framework.attribute.name {
-	color: hsl(320, 60%, 70%);
-}
-tag.attribute.value {
-	color: hsl(5, 80%, 65%);
-}
-tag.attribute.value.delimiter {
-	color: hsl(0, 80%, 60%);
-}
-tag.attribute.operator {
-	color: hsl(210, 50%, 70%);
-}
-tag.attribute.value.link {
-	color: hsl(210, 100%, 70%);
+	color: $lightblue;
+
+	&.name {
+		color: $purple;
+	}
+	
+	&.framework {
+		color: $lime;
+		&.name { color: $purple; }
+	}
+	
+	&.framework.attribute.name {
+		color: $pink;
+	}
+	
+	&.attribute {
+		&.name { color: $green; }
+		&.value { color: $lime; }
+		&.value.delimiter { color: $lime; }
+		&.operator { color: $pink; }
+		&.value.link { color: $yellow; }
+	}
+
 }
 
 /* Styles */
