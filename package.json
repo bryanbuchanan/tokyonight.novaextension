@@ -1,12 +1,11 @@
 {
   "name": "tokyonight.novaextension",
   "version": "1.0.0",
-  "description": "",
   "scripts": {
     "dev": "rollup --c --watch",
     "build": "rollup --c"
   },
-  "keywords": [],
+  "keywords": ["nova", "theme", "tokyo night"],
   "author": "Bryan Buchanan <bryan.b@hey.com>",
   "license": "MIT",
   "devDependencies": {

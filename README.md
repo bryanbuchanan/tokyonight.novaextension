@@ -1,11 +1,5 @@
 # Tokyo Night
 
-https://docs.nova.app/extensions/themes/#window-content
-
-
-**Tokyo Night** provides a fun, bright palette:
-
-![](https://nova.app/images/en/dark/editor.png)
 
 ## Acknowledgements
 
