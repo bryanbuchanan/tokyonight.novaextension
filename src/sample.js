@@ -27,7 +27,7 @@ export default async (req, res) => {
 
 const variable = "string"
 
-const regex = /(.)*\t/g
+
 
 function init() {
 	let count = 25;

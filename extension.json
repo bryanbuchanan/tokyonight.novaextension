@@ -2,8 +2,9 @@
     "identifier": "22slides.tokyonight",
     "name": "Tokyo Night",
     "organization": "22Slides",
-    "description": "Tokyo Night Nova theme",
+    "description": "Tokyo Night theme",
     "version": "1.0",
-    "categories": ["themes"]
+    "categories": ["themes"],
+    "repository": "https://github.com/bryanbuchanan/tokyonight.novaextension",
 }
 
