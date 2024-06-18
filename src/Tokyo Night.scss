@@ -115,7 +115,6 @@ meta.document {
 /* Text */
 meta.text {
 	color: $lightblue;
-	background-color: #fff;
 
 	&.invisible {
 		color: hsla(210, 100%, 90%, .1);
@@ -198,12 +197,10 @@ value {
 		color: $orange;
 	}
 	
-	value {
-		&.null { color: $orange; }
-		&.number { color: $orange; }
-		&.entity { color: hsl(210, 100%, 70%); }
-		&.symbol { color: hsl(210, 100%, 70%); }
-	}
+	&.null { color: $orange; }
+	&.number { color: $orange; }
+	&.entity { color: hsl(210, 100%, 70%); }
+	&.symbol { color: hsl(210, 100%, 70%); }
 	
 }
 
@@ -237,7 +234,7 @@ identifier {
 	&.decorator,
 	&.function,
 	&.method {
-		color: $lightblue;
+		color: $aqua;
 	}
 	
 	&.key {

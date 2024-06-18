@@ -1,9 +1,9 @@
 import postcss from 'rollup-plugin-postcss'
 
 export default {
-	input: './src/tokyonight.scss',
+	input: './src/Tokyo Night.scss',
 	output: {
-		file: './Themes/tokyonight.css',
+		file: './Themes/Tokyo Night.css',
 	},
 	watch: {
 		chokidar: {

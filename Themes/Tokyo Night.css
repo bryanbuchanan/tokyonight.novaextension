@@ -67,7 +67,6 @@ meta.document.textfield.highlighted {
 /* Text */
 meta.text {
   color: #8aa9f9;
-  background-color: #fff;
 }
 meta.text.invisible {
   color: hsla(210, 100%, 90%, 0.1);
@@ -158,16 +157,16 @@ keyword.self.prefix {
 value.boolean {
   color: #f19b74;
 }
-value value.null {
+value.null {
   color: #f19b74;
 }
-value value.number {
+value.number {
   color: #f19b74;
 }
-value value.entity {
+value.entity {
   color: hsl(210, 100%, 70%);
 }
-value value.symbol {
+value.symbol {
   color: hsl(210, 100%, 70%);
 }
 
@@ -188,7 +187,7 @@ identifier.property.prefix {
   color: hsl(240, 100%, 92%);
 }
 identifier.decorator, identifier.function, identifier.method {
-  color: #8aa9f9;
+  color: #9cdbfb;
 }
 identifier.key {
   color: hsl(270, 80%, 80%);
