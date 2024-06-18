@@ -2,6 +2,7 @@ https://github.com/folke/tokyonight.nvim
 
 https://docs.nova.app/extensions/themes/#window-content
 
+
 <!--
 👋 Hello! As Nova users browse the extensions library, a good README can help them understand what your extension does, how it works, and what setup or configuration it may require.
 
