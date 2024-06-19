@@ -1,6 +1,15 @@
-$background: #222436;
-$background2: #1E2030;
+// Text by contrast
+$text-high: #ffffff;
+$text: 		#cad3f2;
+$text-low: 	#848bb4;
 
+// Backgrounds by contrast
+$background-lower: 	#3c425f;
+$background-low: 	#30334b;
+$background: 		#222436;
+$background-high: 	#1E2030;
+
+// Colors
 $red: 		#ee7d82;
 $pink: 		#f0abe6;
 $purple: 	#ba9bf8;
@@ -11,12 +20,7 @@ $green: 	#77d3bf;
 $lime: 		#cae797;
 $yellow: 	#f6c983;
 $orange: 	#f19b74;
-$grey: 		#848bb4;
 $white: 	#cad3f2;
-$darkgrey: 	#3c425f;
-
-$highlight: #30334b;
-$comment: 	#656da2;
 
 meta {
 	-theme-interface-style: dark;
@@ -32,28 +36,28 @@ meta {
 	
 	&.window {
 		border-color: transparent;
-		background-color: $background2;
+		background-color: $background-high;
 	}
 	
 	&.titlebar {
-		color: $white;
+		color: $text;
 		border-color: hsla(0, 0%, 0%, 0.5);
-		
+
 		&.inactive {}
 		
 	}
 	
 	&.button {
-		color: $white;
-		background: $darkgrey;
+		color: $text;
+		background: $background-lower;
 		border: none;
 
 		&.highlighted {
-			color: white;
+			color: $text-high;
 			background: $blue;
 		}
 		&.selected {
-			color: white;
+			color: $text-high;
 			background: $orange;
 			border: transparent;
 		}
@@ -67,7 +71,7 @@ meta {
 
 	&.textfield {
 		background-color: transparent;
-		border-color: $darkgrey;
+		border-color: $background-lower;
 		
 		&.highlighted {
 			border-color: $orange;
@@ -89,8 +93,8 @@ meta.document {
 	border-color: transparent;
 	
 	&.textfield {
-		background-color: $background2;
-		border-color: $darkgrey;
+		background-color: $background-high;
+		border-color: $background-lower;
 	
 		&.highlighted {
 			// background-color: hsl(210, 5%, 10%);
@@ -103,22 +107,22 @@ meta.document {
 
 /* Text */
 meta.text {
-	color: $white;
+	color: $text;
 
 	&.invisible {
 		color: hsla(210, 100%, 90%, .1);
 	}
 	
 	&.selected {
-		color: white;
-		background-color: $darkgrey;
+		color: $text-high;
+		background-color: $background-lower;
 	}
 	
 }
 
 /* Cursor */
 meta.cursor {
-	background-color: $highlight;
+	background-color: $background-low;
 }
 
 /* Indentation Guides */
@@ -128,7 +132,7 @@ meta.indentguide {
 
 /* Gutter */
 meta.gutter {
-	color: $darkgrey;
+	color: $background-lower;
 	
 	&.selected {
 		color: $orange;
@@ -141,7 +145,7 @@ meta.gutter {
  * Syntax styles
  */
 comment {
-	color: $comment;
+	color: $text-low;
 	font-style: italic;
 }
 processing {
@@ -151,14 +155,14 @@ declaration {
 	color: $lightblue;
 }
 bracket {
-	color: $grey;
+	color: $text-low;
 }
 operator {
 	color: $lightblue;
 }
 invalid {
 	background-color: $red;
-	color: $white;
+	color: $text;
 }
 link {
 	color: $orange;
@@ -211,7 +215,7 @@ identifier {
 	&.constant.prefix,
 	&.global.prefix,
 	&.variable.prefix {
-		color: $white;
+		color: $text;
 	}
 	
 	&.property {
@@ -319,17 +323,12 @@ definition.type.name,
 definition.package.name,
 definition.enum.name,
 definition.union.name,
-definition.struct.name {
-	
-}
+definition.struct.name {}
 
 /* Members */
-definition.property.name {
-}
+definition.property.name {}
 definition.function.name,
-definition.method.name {
-	
-}
+definition.method.name {}
 
 /* Tags */
 tag {
@@ -391,7 +390,7 @@ terminal {
 	&.red { color: $red; }
 	&.green { color: $green; }
 	&.yellow { color: $yellow; }
-	&.blue { color: $blue; }
+	&.blue { color: $lightblue; }
 	&.magenta { color: $purple; }
 	&.cyan { color: $aqua; }
 	&.white { color: $white; }

@@ -21,11 +21,11 @@ meta.button {
   border: none;
 }
 meta.button.highlighted {
-  color: white;
+  color: #ffffff;
   background: #3d59a1;
 }
 meta.button.selected {
-  color: white;
+  color: #ffffff;
   background: #f19b74;
   border: transparent;
 }
@@ -69,7 +69,7 @@ meta.text.invisible {
   color: hsla(210, 100%, 90%, 0.1);
 }
 meta.text.selected {
-  color: white;
+  color: #ffffff;
   background-color: #3c425f;
 }
 
@@ -96,7 +96,7 @@ meta.gutter.selected {
  * Syntax styles
  */
 comment {
-  color: #656da2;
+  color: #848bb4;
   font-style: italic;
 }
 
@@ -354,7 +354,7 @@ terminal.yellow {
   color: #f6c983;
 }
 terminal.blue {
-  color: #3d59a1;
+  color: #8aa9f9;
 }
 terminal.magenta {
   color: #ba9bf8;
