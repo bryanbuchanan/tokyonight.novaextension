@@ -15,7 +15,7 @@ $pink: 		#f0abe6;
 $purple: 	#ba9bf8;
 $blue: 		#3d59a1;
 $lightblue: #8aa9f9;
-$aqua: 		#9cdbfb;
+$cyan: 		#9cdbfb;
 $green: 	#77d3bf;
 $lime: 		#cae797;
 $yellow: 	#f6c983;
@@ -174,15 +174,15 @@ keyword {
 	font-style: italic;
 	
 	&.modifier {
-		color: $aqua;
+		color: $cyan;
 		font-style: normal;
 	}
 	
-	&.condition { color: $aqua; }
-	&.construct { color: $aqua; }
-	&.statement { color: $aqua; }
-	&.self { color: $aqua; }
-	&.self.prefix { color: $aqua; }
+	&.condition { color: $cyan; }
+	&.construct { color: $cyan; }
+	&.statement { color: $cyan; }
+	&.self { color: $cyan; }
+	&.self.prefix { color: $cyan; }
 }
 
 /* Values */
@@ -229,7 +229,7 @@ identifier {
 	&.decorator,
 	&.function,
 	&.method {
-		color: $aqua;
+		color: $cyan;
 	}
 	
 	&.key {
@@ -241,7 +241,7 @@ identifier {
 	}
 	
 	&.argument.prefix {
-		color: $aqua;
+		color: $cyan;
 	}
 	
 }
@@ -314,7 +314,7 @@ markup.code {
 	background-color: rgba(128, 128, 128, 0.2);
 }
 markup.link {
-	color: $aqua;
+	color: $cyan;
 }
 
 /* Types */
@@ -392,6 +392,6 @@ terminal {
 	&.yellow { color: $yellow; }
 	&.blue { color: $lightblue; }
 	&.magenta { color: $purple; }
-	&.cyan { color: $aqua; }
+	&.cyan { color: $cyan; }
 	&.white { color: $white; }
 }
