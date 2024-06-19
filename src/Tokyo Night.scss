@@ -42,7 +42,7 @@ meta {
 	&.titlebar {
 		color: $text;
 		border-color: hsla(0, 0%, 0%, 0.5);
-
+		
 		&.inactive {}
 		
 	}
@@ -51,22 +51,26 @@ meta {
 		color: $text;
 		background: $background-lower;
 		border: none;
-
+		
 		&.highlighted {
 			color: $text-high;
 			background: $blue;
 		}
+		
 		&.selected {
 			color: $text-high;
 			background: $orange;
 			border: transparent;
 		}
+		
 		&.highlighted.selected {
 			background: $yellow;
 		}
+		
 		&.disabled {
 			background: transparent;
 		}
+		
 	}
 
 	&.textfield {
