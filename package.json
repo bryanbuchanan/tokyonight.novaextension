@@ -12,5 +12,6 @@
     "rollup": "^4.18.0",
     "rollup-plugin-postcss": "^4.0.2",
     "sass": "^1.77.6"
-  }
+  },
+  "browserslist": []
 }
